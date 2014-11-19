@@ -1,0 +1,26 @@
+{
+   "background": {
+      "scripts": [ "scripts/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "images/icon-19.png",
+         "38": "images/icon-38.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Yo"
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "default_locale": "en",
+   "description": "Official Chrome Extension for Yo",
+   "icons": {
+      "128": "images/icon-128.png",
+      "16": "images/icon-16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAggdYr4EyeW2oYVml8jynffPeu/S/NUnqLfDEG/qqWCvYTDNCt/srZRWzc0g2vwrn49fl+V2sLLprAVZ1enIsKxdq07Z+SSrsYsWa8Jy5bmI0d6sZdyM/1tBbASp/oJ/fhT9HR3MzNEn6aq9mtQShdiPOaEXltmZM4evcqYEL9RLpWeg66ubmpvHXZvdtD65FhlHKbMMiTzlQf4UzeoUtwL6aFlmeGfx6DsDSMigyOgy1GYDvHf/BZX5/NiDqenQr2o7dHZKA1F4V6mNAiG0SrYy11YNZaN2eKSfzvwwYKwCLNAXuwhDYgXOEDi8X99+fYyJkMnYGOTndiMhoub4pTwIDAQAB",
+   "manifest_version": 2,
+   "name": "Yo",
+   "permissions": [ "tabs", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.1"
+}

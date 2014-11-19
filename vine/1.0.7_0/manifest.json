@@ -1,0 +1,30 @@
+{
+   "background": {
+      "scripts": [ "prototypes.js", "vineclient.js", "amazon.js", "http-status-codes.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon16.png"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "prototypes.js", "browser.com.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_idle"
+   }, {
+      "js": [ "prototypes.js", "client.com.js" ],
+      "matches": [ "http://*.vineclient.com/*", "https://*.vineclient.com/*" ]
+   } ],
+   "description": "Explore, Upload, Download, Share and Interact on Vine seamlessly using VineClient.",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvXouop+S/QaSp3AycflZ6JlwatD3mWAtQ4cKDqqLllcvJdP2F8Fymhx/2/R8Qfpkz5DllqwQsgxjP4OPFNaC4C0CyDN8msTHD8y8faYfUV0+BBgxrORBEbzTOi8V2IG5esK1Dm4UQubkKqTaYb8uDV+K3tX+/iTO6Mhb2+1UT7OETP1lzGTpufjQoZqWhyEzQC4EIrAAf8xan+LjtrZ3Cs3P31bm63qsItfUEvYecn4poVUYBcSR40IFwMgzMOdeRArFJQb0idmJdgIP4F0foj30nMqttI6ZgfAw5ZyOCmd02yzVY+zNPM4ipiPy9dRFfPawv6w5nJ4XyJcKl527ewIDAQAB",
+   "manifest_version": 2,
+   "name": "Vine Client",
+   "permissions": [ "tabs", "webRequest", "webRequestBlocking", "storage", "https://*/", "http://*/" ],
+   "short_name": "Vine Client",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.7"
+}
